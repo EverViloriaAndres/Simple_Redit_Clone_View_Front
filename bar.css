@@ -1,0 +1,108 @@
+.iconBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;                                                                        
+
+
+    
+    flex-shrink: 2;
+    flex-grow: 1;
+    flex-basis: 60%;
+    .someIcon{
+        
+        opacity: 0.6; 
+        padding: 4px;  
+        background-size: contain;
+        background-repeat: no-repeat;                       
+    }
+    /*Befors para los 11 iconos del procesador de texto*/
+
+     *::before{
+        content: '';
+        display: block;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+                                         
+    }
+    .bold::before{
+        
+        background-image: url(./img/BoldBCanva.png);                                  
+    }
+    .italic::before{
+        
+        background-image: url(./img/italic.png);                                  
+    }
+    .link::before{
+        
+        background-image: url(./img/link.png);                                  
+    }
+    .cross::before{
+        
+        background-image: url(./img/crossS.png);                                  
+    }
+    .code::before{
+        
+        background-image: url(./img/codeCanva.png);                                  
+    }
+    .aExponent::before{
+        
+        background-image: url(./img/aExponent.png);                                  
+    }
+    .warning::before{
+        
+        background-image: url(./img/warning.png);                                  
+    }
+    .tExponent::before{
+        content: '';
+        display: block;
+        width: 23px;
+        height: 24px;
+        background-image: url(./img/tExponent.png); 
+    }
+    .pontList::before{
+        
+        background-image: url(./img/listaPuntos.png); 
+    }
+    .numberList::before{
+        
+        background-image: url(./img/list.png);                                  
+    }.ellipsis::before{
+        
+        background-image: url(./img/ellipsis.png);                                  
+    }
+    /*Aqui termina los 11 iconos del procesador de texto*/
+}
+.notIconBar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;                                
+
+    flex-grow: 1;
+    padding:5px;
+    
+
+     
+    .markDowmMode{
+                                                    
+        font-size: small;                                            
+
+    }
+    .sendComent{
+        
+        
+        
+        .btnSendComent{
+            width: 100%;                                            
+            
+            border: none;
+            border-radius: 30px;
+            padding: 3px 15px;
+            background-color: rgb(140, 140, 140);
+            color: rgb(199, 199, 199);
+        }
+
+    }
+}
